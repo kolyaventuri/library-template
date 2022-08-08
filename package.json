@@ -1,0 +1,20 @@
+{
+  "name": "i18n-provider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolyaventuri/i18n-provider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kolyaventuri/i18n-provider/issues"
+  },
+  "homepage": "https://github.com/kolyaventuri/i18n-provider#readme"
+}
