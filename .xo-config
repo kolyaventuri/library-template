@@ -5,8 +5,7 @@
   },
   "extends": [
     "xo-typescript",
-    "plugin:@typescript-eslint/recommended",
-    "xo-react/space"
+    "plugin:@typescript-eslint/recommended"
   ],
   "extensions": [
     "ts"
@@ -54,7 +53,7 @@
   },
   "overrides": [
     {
-      "files": "test/**/*.ts?(x)",
+      "files": "test/**/*.ts",
       "rules": {
         "@typescript-eslint/explicit-function-return-type": 0,
         "@typescript-eslint/prefer-readonly-parameter-types": 0,
@@ -66,7 +65,7 @@
       }
     },
     {
-      "files": "src/**/*.ts?(x)",
+      "files": "src/**/*.ts",
       "rules": {
         "import/no-unassigned-import": 0
       }
@@ -79,16 +78,11 @@
       }
     }
   ],
-  "settings": {
-    "react": {
-      "version": "17.0"
-    }
-  },
   "env": [
     "node"
   ],
   "include": [
-    "**/*.ts?(x)"
+    "**/*.ts"
   ],
   "ignore": [
     "**/*.js"

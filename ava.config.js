@@ -8,7 +8,7 @@ export default {
     "--experimental-specifier-resolution=node"
   ],
   files: [
-    'test/**/*.test.ts?(x)'
+    'test/**/*.test.ts'
   ],
   require: [
     'ts-node/register',
