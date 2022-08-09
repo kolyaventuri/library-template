@@ -2,9 +2,15 @@
   "name": "i18n-provider",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm-run-all lint:* test:*",
+    "test:unit": "cross-env TS_NODE_PROJECT=tsconfig/tsconfig.ava.json ava",
+    "lint": "npm-run-all lint:*",
+    "lint:tsc": "tsc --noEmit",
+    "lint:lint": "xo --fix",
+    "postinstall": "husky install"
   },
   "repository": {
     "type": "git",
@@ -17,6 +23,11 @@
     "url": "https://github.com/kolyaventuri/i18n-provider/issues"
   },
   "homepage": "https://github.com/kolyaventuri/i18n-provider#readme",
+  "lint-staged": {
+    "**/*.ts?(x)": [
+      "xo --fix"
+    ]
+  },
   "devDependencies": {
     "@ava/babel": "^2.0.0",
     "@testing-library/react": "^13.3.0",
